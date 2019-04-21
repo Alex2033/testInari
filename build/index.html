@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Модерация регистраций</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- begin wrapper-->
+    <div class="wrapper">
+      <!-- begin sidebar -->
+      <aside class="sidebar">
+        <header class="sidebar__header">
+          <!-- begin logo -->
+          <div class="logo"><a class="logo__link" href="/"><img class="logo__img logo--short" src="img/sidebar/short_logo.png" alt="Short logo image"><img class="logo__img logo--big" src="img/sidebar/logo.png" alt="Big logo image"></a></div>
+          <!-- end logo -->
+          <!-- begin account -->
+          <div class="account">
+            <button class="account__btn">
+              <svg height="28" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+              </svg><span class="account__text">super.mega.odmen.sergey.super.cool</span>
+              <div class="account__img">
+                <svg id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="15" height="15" viewBox="0 0 26.277332 26.27733" sodipodi:docname="exit.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+                  <metadata id="metadata8">
+                    <rdf:rdf></rdf:rdf>
+                    <cc:work rdf:about="">
+                      <dc:format>image/svg+xml</dc:format>
+                      <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                      <dc:title></dc:title>
+                    </cc:work>
+                  </metadata>
+                  <defs id="defs6"></defs>
+                  <sodipodi:namedview id="namedview4" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1680" inkscape:window-height="988" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="7.8666667" inkscape:cx="12.375954" inkscape:cy="12.248835" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg2"></sodipodi:namedview>
+                  <path id="path12" d="m 0.33866568,25.938666 c -0.96119,-0.96119 -0.0022,-2.452419 4.50825002,-7.010446 L 10.576059,13.138666 4.8469157,7.3491123 C 0.33644968,2.7910853 -0.62252432,1.299856 0.33866568,0.33866611 1.2998557,-0.62252377 2.7910847,0.33644611 7.3491117,4.8469164 L 13.138666,10.57606 18.92822,4.8469164 c 4.558027,-4.51046619 6.049256,-5.46944017 7.010446,-4.50825029 0.96119,0.96118989 0.0022,2.45241919 -4.50825,7.01044619 l -5.729143,5.7895537 5.729143,5.789554 c 4.510466,4.558027 5.46944,6.049256 4.50825,7.010446 -0.96119,0.96119 -2.452419,0.0022 -7.010446,-4.50825 l -5.789554,-5.729143 -5.7895543,5.729143 c -4.558027,4.510466 -6.049256,5.46944 -7.01044602,4.50825 z" inkscape:connector-curvature="0"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+          <!-- end account -->
+        </header>
+        <ul class="sidebar__list">
+          <li class="sidebar__list-item">
+            <button class="sidebar__btn">
+              <svg id="svg" version="1.1" width="18" height="16" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="svgg">
+                  <path id="path0" d="M0.000 28.196 L 0.000 56.392 200.000 56.392 L 400.000 56.392 400.000 28.196 L 400.000 0.000 200.000 0.000 L 0.000 0.000 0.000 28.196 M0.000 125.394 L 0.000 156.217 200.000 156.217 L 400.000 156.217 400.000 125.394 L 400.000 94.571 200.000 94.571 L 0.000 94.571 0.000 125.394 M0.000 225.569 L 0.000 256.392 200.000 256.392 L 400.000 256.392 400.000 225.569 L 400.000 194.746 200.000 194.746 L 0.000 194.746 0.000 225.569 M0.000 322.592 L 0.000 350.263 128.196 350.263 L 256.392 350.263 256.392 322.942 C 256.392 298.891,256.329 295.622,255.867 295.622 C 255.578 295.622,255.342 295.464,255.342 295.271 C 255.342 295.039,212.551 294.921,127.671 294.921 L 0.000 294.921 0.000 322.592 " stroke="none" fill-rule="evenodd"></path>
+                </g>
+              </svg>
+            </button>
+            <div class="sidebar__hint">Контент</div>
+            <div class="sidebar__list-text"><a class="sidebar__list-title" href="/">Контент</a>
+              <ul class="sidebar__submenu">
+                <li class="sidebar__submenu-item"><a class="sidebar__submenu-link" href="/">Компании</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__list-item">
+            <button class="sidebar__btn">
+              <svg id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.27657 121.98058" height="21" width="19" version="1.1">
+                <metadata id="metadata8">
+                  <rdf:rdf></rdf:rdf>
+                  <cc:work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                    <dc:title></dc:title>
+                  </cc:work>
+                </metadata>
+                <defs id="defs6"></defs>
+                <path id="path3715" d="M 46.43892,120.17759 C 24.88453,112.4232 10.73147,93.622876 3.62944,63.311291 1.72228,55.171497 1.00264,48.732521 0.56809,35.920009 L 0,19.170009 H 8.4281903 C 22.99779,19.170009 37.62478,13.800936 48.0351,4.6316485 L 53.29362,0 58.39035,4.582399 c 5.87438,5.2815682 16.73725,10.884188 25.34632,13.072578 3.27805,0.833267 9.69055,1.515032 14.249995,1.515032 h 8.289905 v 13.400627 c 0,44.531682 -16.71531,77.121684 -44.78041,87.308764 -7.55671,2.74294 -8.22495,2.75617 -15.05724,0.29819 z m 17.62194,-12.53605 c 13.48685,-6.7472 22.68268,-20.031908 27.78244,-40.135722 2.50223,-9.864086 4.520615,-30.544437 3.66835,-37.585809 l -0.45389,-3.75 -6.64059,-0.02445 c -3.65233,-0.01344 -8.6656,-0.490825 -11.1406,-1.060844 -6.42521,-1.479794 -16.1897,-6.513593 -20.07982,-10.35156 l -3.3302,-3.285557 -4.7355,3.743199 C 39.99388,22.41332 29.43007,26.138085 18.02657,26.158136 l -6.75,0.01187 0.0198,10.25 c 0.0706,36.547284 13.39668,64.459464 34.76257,72.812164 6.81185,2.663 10.07589,2.37459 18.00191,-1.59063 z M 52.46987,101.35126 C 55.2874,97.429635 85.65305,64.213158 86.05401,64.614118 86.74274,65.302847 83.24135,75.1839 80.04171,81.581041 74.49399,92.672764 61.84312,103.17001 54.02352,103.17001 c -2.57765,0 -2.73121,-0.17976 -1.55365,-1.81875 z m -14.13708,-4.874395 -3.10262,-2.806856 26.2732,-28.624999 26.2732,-28.624999 0.29831,5.897871 0.29831,5.89787 -22.71362,25.227128 c -12.49249,13.874921 -23.0535,25.365215 -23.4689,25.533985 -0.41539,0.16878 -2.15144,-0.95622 -3.85788,-2.5 z M 26.40659,80.942442 C 21.93091,71.564496 19.25881,59.481834 18.585,45.574845 l -0.58603,-12.095164 7.3888,-0.561202 c 8.83128,-0.670762 16.07204,-3.255644 22.93883,-8.188945 l 5.06344,-3.637717 3.69326,2.906023 c 5.17675,4.073287 11.2592,6.992958 17.24053,8.275724 l 5.11332,1.096612 -1.92343,2.149916 c -3.54999,3.967996 -42.4607,46.116356 -45.25594,49.021553 l -2.76294,2.871636 z"></path>
+              </svg>
+            </button>
+            <div class="sidebar__hint">Модерация</div>
+            <div class="sidebar__list-text"><a class="sidebar__list-title" href="/">Модерация</a>
+              <ul class="sidebar__submenu">
+                <li class="sidebar__submenu-item"><a class="sidebar__submenu-link" href="/">Регистрации +5</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__list-item">
+            <button class="sidebar__btn">
+              <svg id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.120731 28" height="16" width="24" version="1.1">
+                <metadata id="metadata8">
+                  <rdf:rdf></rdf:rdf>
+                  <cc:work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                    <dc:title></dc:title>
+                  </cc:work>
+                </metadata>
+                <defs id="defs6"></defs>
+                <path id="path12" d="M 0.310365,24.298903 C 0.702822,19.61886 4.589009,17.116791 12.778318,16.27158 l 5.739941,-0.592414 -2.198765,2.795276 C 15.043842,20.09617 14.12073,22.682513 14.12073,24.634859 V 28 H 7.0603649 0 Z m 17.810365,0.72415 c 0,-4.232092 3.86331,-6.523053 11,-6.523053 7.13669,0 11,2.290961 11,6.523053 V 28 h -11 -11 z M 25.692159,12.428571 C 22.691429,9.4278421 24.845555,4 29.037171,4 31.142347,4 34.12073,7.0312267 34.12073,9.1737531 34.12073,11.098475 30.960049,14 28.863418,14 27.983511,14 26.556444,13.292857 25.692159,12.428571 Z M 10.12073,9.9999999 C 9.0207299,8.9 8.1207299,7.1 8.1207299,6 c 0,-2.5755637 3.4244361,-6 6.0000001,-6 2.575564,0 6,3.4244363 6,6 0,2.5755637 -3.424436,6 -6,6 -1.1,0 -2.9,-0.9 -4,-2.0000001 z"></path>
+              </svg>
+            </button>
+            <div class="sidebar__hint">Пользователи</div>
+            <div class="sidebar__list-text"><a class="sidebar__list-title" href="/">Пользователи</a>
+              <ul class="sidebar__submenu">
+                <li class="sidebar__submenu-item"><a class="sidebar__submenu-link" href="/">Администраторы</a></li>
+                <li class="sidebar__submenu-item"><a class="sidebar__submenu-link" href="/">Модераторы</a></li>
+                <li class="sidebar__submenu-item"><a class="sidebar__submenu-link" href="/">Компании</a></li>
+                <li class="sidebar__submenu-item"><a class="sidebar__submenu-link" href="/">Заблокированные</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__list-item">
+            <button class="sidebar__btn">
+              <svg id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.900341 36.01902" height="21" width="26" version="1.1">
+                <metadata id="metadata8">
+                  <rdf:rdf></rdf:rdf>
+                  <cc:work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                    <dc:title></dc:title>
+                  </cc:work>
+                </metadata>
+                <defs id="defs6"></defs>
+                <path id="path12" d="m 13.767653,32.26869 c -6.4454028,-3.542654 -6.733099,-3.860201 -6.75,-7.45037 -0.0097,-2.0625 0.2766022,-3.75 0.6362472,-3.75 0.359645,0 3.5096448,1.597024 6.9999998,3.548941 L 21,28.166202 27.3461,24.617261 c 3.490355,-1.951917 6.640355,-3.548941 7,-3.548941 0.359645,0 0.646261,1.6875 0.636925,3.75 -0.01633,3.608762 -0.278691,3.891238 -6.965821,7.5 -3.821866,2.0625 -7.076727,3.727666 -7.233025,3.70037 -0.156299,-0.0273 -3.313735,-1.714797 -7.016526,-3.75 z M 39,21.139265 v -6.929056 l -8.991917,4.960664 -8.991917,4.960664 -10.508083,-5.77002 C 4.728637,15.188006 0,12.356068 0,12.06832 0,11.780572 4.730728,8.9474853 10.51273,5.7725715 L 21.02546,0 31.76273,5.9361991 42.5,11.872398 42.79044,19.970359 C 43.0623,27.55005 42.9503,28.06832 41.040442,28.06832 39.182837,28.06832 39,27.447432 39,21.139265 Z"></path>
+              </svg>
+            </button>
+            <div class="sidebar__hint">Справочники</div>
+            <div class="sidebar__list-text"><a class="sidebar__list-title" href="/">Справочники</a>
+              <ul class="sidebar__submenu">
+                <li class="sidebar__submenu-item"><a class="sidebar__submenu-link" href="/">Виды деятельности</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar__list-item" id="sidebar-activate">
+            <button class="sidebar__btn">
+              <svg id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.710381 39.496132" height="20" width="20" version="1.1">
+                <metadata id="metadata8">
+                  <rdf:rdf></rdf:rdf>
+                  <cc:work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                    <dc:title></dc:title>
+                  </cc:work>
+                </metadata>
+                <defs id="defs6"></defs>
+                <path id="path12" d="M 13.000624,38.552761 C 8.2760967,37.190245 2.1240087,30.638583 0.73888674,25.494636 -1.6550593,16.604197 1.9018517,7.2608795 9.471898,2.5547055 15.14394,-0.97151006 24.910234,-0.82768268 30.489081,2.8642238 50.073823,15.82479 35.725002,45.106291 13.000624,38.552761 Z M 26.118026,34.317515 C 36.392643,30.024507 38.897381,16.554412 30.906863,8.5638942 19.671768,-2.6712012 1.2611047,7.3920136 4.2177157,23.152104 5.9839067,32.566716 16.939882,38.152389 26.118026,34.317515 Z M 15.789216,19.681541 v -9.06479 l 5.5,4.15254 c 3.025,2.283898 5.5,4.49441 5.5,4.91225 0,0.41784 -2.475,2.628352 -5.5,4.91225 l -5.5,4.15254 z"></path>
+              </svg>
+            </button>
+            <div class="sidebar__hint">Развернуть</div>
+            <div class="sidebar__list-text">
+              <ul class="sidebar__submenu">
+                <li class="sidebar__submenu-item"><a class="sidebar__submenu-link">Свернуть</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <!-- end sidebar-->
+      <!-- begin content-->
+      <main class="content">
+        <!-- begin popup -->
+        <div class="popup">
+          <header class="popup__head">
+            <div class="popup__title">nokhchoprint@ya.ru</div>
+            <button class="popup__exit">
+              <svg id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="15" height="15" viewBox="0 0 26.277332 26.27733" sodipodi:docname="exit.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+                <metadata id="metadata8">
+                  <rdf:rdf></rdf:rdf>
+                  <cc:work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+                    <dc:title></dc:title>
+                  </cc:work>
+                </metadata>
+                <defs id="defs6"></defs>
+                <sodipodi:namedview id="namedview4" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1680" inkscape:window-height="988" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="7.8666667" inkscape:cx="12.375954" inkscape:cy="12.248835" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg2"></sodipodi:namedview>
+                <path id="path12" d="m 0.33866568,25.938666 c -0.96119,-0.96119 -0.0022,-2.452419 4.50825002,-7.010446 L 10.576059,13.138666 4.8469157,7.3491123 C 0.33644968,2.7910853 -0.62252432,1.299856 0.33866568,0.33866611 1.2998557,-0.62252377 2.7910847,0.33644611 7.3491117,4.8469164 L 13.138666,10.57606 18.92822,4.8469164 c 4.558027,-4.51046619 6.049256,-5.46944017 7.010446,-4.50825029 0.96119,0.96118989 0.0022,2.45241919 -4.50825,7.01044619 l -5.729143,5.7895537 5.729143,5.789554 c 4.510466,4.558027 5.46944,6.049256 4.50825,7.010446 -0.96119,0.96119 -2.452419,0.0022 -7.010446,-4.50825 l -5.789554,-5.729143 -5.7895543,5.729143 c -4.558027,4.510466 -6.049256,5.46944 -7.01044602,4.50825 z" inkscape:connector-curvature="0"></path>
+              </svg>
+            </button>
+          </header>
+          <div class="popup__content">
+            <div class="popup__info">
+              <div class="popup__requisites">
+                <div class="popup__requisites-icon">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </div>
+                <div class="popup__requisites-text">
+                  <p>Указанные реквизиты совпадают с созданной карточкой компании: <br><span class="underline">ПЕРМЬ</span></p>
+                </div>
+              </div>
+              <div class="popup__data">
+                <div class="popup__data-item">
+                  <h6>Полное наименование</h6>
+                  <p>Общество с ограниченной ответственностью <br> 213123123123</p>
+                  <h6>Юридический адрес</h6>
+                  <p>614068, г.Пермь, ул. Крылова, д. 4</p>
+                </div>
+                <div class="popup__data-item">
+                  <h6>ИНН</h6>
+                  <p>5902836184</p>
+                </div>
+                <div class="popup__data-item">
+                  <h6>КПП</h6>
+                  <p>590201001</p>
+                </div>
+                <div class="popup__data-item">
+                  <h6>ОГРН</h6>
+                  <p>1075902001317</p>
+                </div>
+                <div class="popup__data-item">
+                  <h6>ОКВЭД</h6>
+                  <p>58</p>
+                </div>
+                <div class="popup__data-item">
+                  <h6>ФИО руководителя</h6>
+                  <p>Лошкарев Алексей Григорьевич</p>
+                </div>
+              </div>
+            </div>
+            <div class="popup__registration">
+              <div class="popup__registration-body">
+                <h5>Регистрационные данные</h5>
+                <div class="popup__registration-item">
+                  <h6>Контактное лицо:</h6>
+                  <p>Малгобек Мурад Маглобекович</p>
+                </div>
+                <div class="popup__registration-item">
+                  <h6>Телефон: </h6>
+                  <p> <a href="tel:+79530000000">+7(953)000-00-00 </a></p>
+                </div>
+                <div class="popup__registration-item popup__registration-email">
+                  <h6>E-mail:</h6>
+                  <p> <a href="tel:+79530000000">+7(953)000-00-00 </a></p>
+                </div>
+                <div class="popup__registration-item">
+                  <h6>Дата регистрации:</h6>
+                  <p>20.10.18 15:30</p>
+                </div>
+              </div>
+              <div class="popup__registration-btns">
+                <div class="ban-btn"> 
+                  <button class="ban-btn__item">Заблокировать</button>
+                  <div class="ban-btn__window">
+                    <p>Вы хотите заблокировать пользователя?</p>
+                    <div class="ban-btn__actions">
+                      <button id="yes">Да</button>
+                      <button id="no">Нет</button>
+                    </div>
+                  </div>
+                </div>
+                <button class="button confirm-btn">Подтвердить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end popup -->
+        <h1 class="content__title title">Модерация Регистраций</h1>
+        <!-- begin table -->
+        <table class="table">
+          <thead class="table__header">
+            <tr>
+              <td class="table__name">Имя</td>
+              <td class="table__buttons">Тип совпадения</td>
+              <td class="table__date">Дата\время</td>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr>
+              <td class="table__email">ivanov@gmail.com</td>
+              <td class="table__buttons">
+                <button class="table__button user__btn">
+                  <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                  </svg>
+                </button>
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">nokhchoprint@ya.ru</td>
+              <td class="table__buttons">
+                <button class="table__button user__btn">
+                  <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                  </svg>
+                </button>
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">petrov@mail.ru</td>
+              <td class="table__buttons">
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">petrovich@mail.ru</td>
+              <td class="table__buttons">
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">petrovspam@hotmail.com</td>
+              <td class="table__buttons">
+                <button class="table__button user__btn">
+                  <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">ivanov@gmail.com</td>
+              <td class="table__buttons">
+                <button class="table__button user__btn">
+                  <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                  </svg>
+                </button>
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">nokhchoprint@ya.ru</td>
+              <td class="table__buttons">
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">petrov@mail.ru</td>
+              <td class="table__buttons">
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">petrovich@mail.ru</td>
+              <td class="table__buttons">
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">petrovspam@hotmail.com</td>
+              <td class="table__buttons">
+                <button class="table__button user__btn">
+                  <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">ivanov@gmail.com</td>
+              <td class="table__buttons">
+                <button class="table__button user__btn">
+                  <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                  </svg>
+                </button>
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">nokhchoprint@ya.ru</td>
+              <td class="table__buttons">
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">petrov@mail.ru</td>
+              <td class="table__buttons">
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">petrovich@mail.ru</td>
+              <td class="table__buttons">
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">petrovspam@hotmail.com</td>
+              <td class="table__buttons">
+                <button class="table__button user__btn">
+                  <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">ivanov@gmail.com</td>
+              <td class="table__buttons">
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+            <tr>
+              <td class="table__email">nokhchoprint@ya.ru</td>
+              <td class="table__buttons">
+                <button class="table__button moderate-btn">
+                  <svg height="24" viewBox="0 0 24 25" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                  </svg>
+                </button>
+              </td>
+              <td class="table__date">20.10.18 15:30</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- end table   -->
+      </main>
+      <!-- end content-->
+    </div>
+    <!-- end wrapper-->
+    <!-- begin footer -->
+    <footer class="footer"></footer>
+    <!-- end footer -->
+    <!-- scripts -->
+    <script src="libs/jquery/jquery.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>

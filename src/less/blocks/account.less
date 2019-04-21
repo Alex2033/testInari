@@ -1,0 +1,66 @@
+.account {
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    background-color: @accent;
+    padding-bottom: 18px;
+    padding-top: 15px;
+    
+
+    &.active {
+        background-color: @light;
+        width: 258px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+        svg {
+            fill: @accent;
+        }
+
+        .account__btn {
+            justify-content: flex-start;
+            padding-left: 16px;
+            padding-right: 0;
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        svg {
+            fill: @light;
+            transition: fill .1s ease; 
+        }
+        
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &__text {
+        display: none;
+        margin-left: 10px;
+        color: #6a6a6a;
+        margin-right: 7px;
+    }
+
+    &__img {
+        width: 15px;
+        flex: 0 0 15px;
+        display: none;
+        margin-top: 5px;
+
+        path {
+            fill: @icon-color;
+        }
+    }
+}

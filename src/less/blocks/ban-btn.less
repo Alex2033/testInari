@@ -1,0 +1,116 @@
+.ban-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+	
+	&__item {
+		margin-right: 30px;
+		background-color: transparent;
+		border: 0;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #616161;
+		cursor: pointer;
+		transition: transform .05s ease;
+
+		&:active {
+			transform: translateY(1px);
+		}
+
+		&:focus {
+			outline: 0;
+        }
+        
+        .xs-block({
+            margin-right: 0;
+            margin-bottom: 10px;
+        });
+    }
+    
+    &__window {
+        position: absolute;
+        bottom: 100%;
+        display: none;
+        left: 75%;
+        transform: translateX(-50%);
+        background-color: @light;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        padding: 25px 30px 30px;
+        max-width: 420px;
+
+        &::after{
+            content: '';
+            position: absolute; 
+            left: 37%; 
+            bottom: -13px;
+            background: @light;
+            width: 15px;
+            height: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            z-index: -1;  
+            transform: rotate(45deg) translateX(-50%);    
+        }
+
+        &::before {
+            z-index: 1; 
+            content: '';
+            background-color: #ffffff;
+            transform: translateX(-50%);
+            left: 37%;
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            bottom: 0;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #454545;
+        }
+
+        .xs-block({
+            padding: 20px 15px;
+            width: 270px;
+            left: 5%;
+            bottom: 150%;
+
+            &::after, &::before {
+                left: 70%;
+            }
+        });
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        > * {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+        button {
+            background-color: transparent;
+            border: 0;
+            text-transform: uppercase;
+            color: @icon-color;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 5px;
+            cursor: pointer;
+            transition: color .1s ease;
+
+            &:hover {
+                color: darken(@icon-color, 10%);
+            }
+
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+}

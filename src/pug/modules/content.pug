@@ -1,0 +1,159 @@
+// begin content
+main.content
+
+    include ../modules/popup
+
+    h1.content__title.title Модерация Регистраций
+    // begin table 
+    table.table
+        thead.table__header
+            tr
+                td.table__name Имя
+                td.table__buttons Тип совпадения
+                td.table__date Дата\время
+        tbody.table__body
+            tr
+                td.table__email ivanov@gmail.com
+                td.table__buttons
+                    button.table__button.user__btn
+                        svg(height='24', viewBox='0 0 24 24', width='24', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z')
+                            path(d='M0 0h24v24H0z', fill='none')
+
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email nokhchoprint@ya.ru
+                td.table__buttons
+                    button.table__button.user__btn
+                        svg(height='24', viewBox='0 0 24 24', width='24', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z')
+                            path(d='M0 0h24v24H0z', fill='none')
+
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email petrov@mail.ru
+                td.table__buttons
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email petrovich@mail.ru
+                td.table__buttons
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email petrovspam@hotmail.com
+                td.table__buttons
+                    button.table__button.user__btn
+                        svg(height='24', viewBox='0 0 24 24', width='24', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z')
+                            path(d='M0 0h24v24H0z', fill='none')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email ivanov@gmail.com
+                td.table__buttons
+                    button.table__button.user__btn
+                        svg(height='24', viewBox='0 0 24 24', width='24', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z')
+                            path(d='M0 0h24v24H0z', fill='none')
+
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email nokhchoprint@ya.ru
+                td.table__buttons
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email petrov@mail.ru
+                td.table__buttons
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email petrovich@mail.ru
+                td.table__buttons
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email petrovspam@hotmail.com
+                td.table__buttons
+                    button.table__button.user__btn
+                        svg(height='24', viewBox='0 0 24 24', width='24', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z')
+                            path(d='M0 0h24v24H0z', fill='none')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email ivanov@gmail.com
+                td.table__buttons
+                    button.table__button.user__btn
+                        svg(height='24', viewBox='0 0 24 24', width='24', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z')
+                            path(d='M0 0h24v24H0z', fill='none')
+
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email nokhchoprint@ya.ru
+                td.table__buttons
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email petrov@mail.ru
+                td.table__buttons
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email petrovich@mail.ru
+                td.table__buttons
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email petrovspam@hotmail.com
+                td.table__buttons
+                    button.table__button.user__btn
+                        svg(height='24', viewBox='0 0 24 24', width='24', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z')
+                            path(d='M0 0h24v24H0z', fill='none')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email ivanov@gmail.com
+                td.table__buttons
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            tr
+                td.table__email nokhchoprint@ya.ru
+                td.table__buttons
+                    button.table__button.moderate-btn
+                        svg(height='24', viewBox='0 0 24 25', width='25', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z')
+                td.table__date 20.10.18 15:30
+            
+    // end table   
+// end content

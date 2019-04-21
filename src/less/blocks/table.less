@@ -1,0 +1,131 @@
+.table {
+    width: 100%;
+    border-spacing: 0;
+
+    &__header {
+
+        td {
+            font-weight: 600;
+            font-size: 12px;
+
+            .xs-block({
+                margin-bottom: 0;
+            });
+        }
+    }
+
+    tr {
+        display: flex;
+        align-items: center;
+        padding: 16px 24px 16px 20px;
+        width: 100%;
+        justify-content: space-between;
+
+        td:first-child {
+            flex: 1 1 auto;
+            display: block;
+        }
+
+        .xs-block({
+            flex-wrap: wrap;
+            padding: 10px 15px;
+        });
+
+    }
+    &__body {
+        width: 100%;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+
+        tr {
+            background-color: @light;
+            border-bottom: 1px solid #c6c6c6;
+            transition: border-color .1s ease;
+
+            &.confirmed {
+                background-color: rgba(@accent, 1);
+                color: @light;
+
+                svg {
+                    fill: @light;
+                }
+            }
+
+            &.banned {
+                opacity: 0.5;
+            }
+            
+            &:hover, &.active {
+                border-color: @accent;
+
+                .table__email {
+                    text-shadow: -1px 0 0px @text;
+                }
+            }
+        }
+
+        svg {
+            fill: @icon-color;
+            transition: fill .1s ease;
+        }
+    }
+
+    &__email {
+        transition: text-shadow .1s ease;
+
+        .xs-block({
+           margin-bottom: 5px; 
+        });
+    }
+
+    &__date {
+        width: 90px;
+        flex: 0 0 90px;
+
+        .xxs-block({
+            width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 5px;
+        });
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        width: 100px;
+        flex: 0 0 100px;
+        margin-right: 43px;
+
+        > * {
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+
+        .xs-block({
+            width: 100%;
+            flex: 0 0 100%;
+            order: 2;
+            margin-right: 0;
+        });
+    }
+
+    &__button {
+        border: 0;
+        background-color: transparent;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            svg {
+                fill: @accent;
+            }
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+}
